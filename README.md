@@ -32,3 +32,5 @@ In the end we decided to go with the model trained on all types of noise complai
 
 ### Testing on newer data
 The third section uses the model trained on 2016 data and tests it on the last week of 2019 June. Here we increased the enforceability probabilities based on whether construction related complaints took place after hours and if they had a permit. We also created a field that would identify if two construction complaints were within 300 metres of each other(approxiamately one block) as this could mean they are from the same source of noise.  
+
+Note: The notebooks were written following PEP8 guidelines.
