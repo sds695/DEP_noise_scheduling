@@ -13,6 +13,12 @@ The first section deals with getting 2016 complaints and features related to eac
 
 A key step in the feature engineering was mapping the resolution description of the closed complaints to 1 or 2 based on enforceability. For example the resolution description "The Department of Environmental Protection observed a violation of the New York City Air/Noise Code at the time of inspection and issued a notice of violation." was assigned as 1 whereas "The Department of Environmental Protection scheduled an inspection." was assigned to 2 as the goal is to close more complaints.
 
+
+AHV Assignment:
+
+The after hour variance permits are what allows a construction to be done after hours. The DEP indicated that this could be a useful tool to identify enforceable complaints. However since this data is not publicly available we had to make use of data scraped by NYU researcher Fabio Miranda(https://engineering.nyu.edu/student/fabio-miranda). This scraper had complaints only until mid-2017 and we had to scrape the permits for the 2019 data. Each of these files had differences in format and were tackled in separate notebooks(ahv_assignment_2016.ipynb and ahv_assignment_2019.ipynb).
+
+
 ### Modelling
 In the second section we test out models to maximize the F1-Score which is the harmonic mean between Precision and Accuracy. Here we decided to use the random forest classifier as we had multiple variables and wanted our model to be robust to noise in the data.
 
